@@ -1,0 +1,10 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* MediaQueries */
+
+@media all and (max-width:550px) {
+  .background {
+    margin-top:-200px;
+  }
+}
