@@ -1,0 +1,46 @@
+<!DOCTYPE html>  
+<html lang="et">  
+	<head>  
+  	<meta charset="utf-8">  
+  	<title>HTML5 canvas näidis 1</title>  
+
+		<style type="text/css">
+    body { 
+    overflow-x: hidden; 
+    }
+    </style>
+
+Read more at http://www.codingforums.com/showthread.php?t=1953#h5Bdgutg6mdXLhfK.99  	</head>  
+
+	<body style="background: #000000;">  
+		<canvas id="c" width="1200" height="674" style="border: 1px solid #990000; position: absolute; left:0; top: 0;" ><!--style="border: 1px solid #990000; position: absolute; left:0; top: 0;"-->
+			<script>
+        var canvas = document.getElementById('c');
+        var context = canvas.getContext('2d');
+        var imageObj = new Image();
+  
+        imageObj.onload = function() {
+          context.drawImage(imageObj, 0, 0);
+        };
+        imageObj.src = 'img/background.jpg';
+      </script>
+		</canvas>  
+ 
+ 
+ <!--
+ <body style="background: #000000; background-image:url(img/background.jpg); background-repeat: no-repeat; background-position: center top; top: 10px; top: 0; margin-top: 0;">  
+ <div style="background-image: url(img/houses.png); border: 1px solid #0066cc; height: 674px; width: 1200px; top: 0; margin-left: auto; margin-right: auto; overflow: hidden; ">
+ </div>
+ 
+  <canvas id="c" width="100" height="200" style="border: 1px solid #990000;">
+  	Nontitled
+
+
+    Metsloomad linnas
+    lõpus päris rebane
+
+  </canvas>  
+-->
+  
+	</body>  
+</html>  
