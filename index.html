@@ -5,13 +5,50 @@
   	<title>Nontitled</title>  
     	<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css" />
 			<style type="text/css">
+				.fullframe { width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: center top;  display: block; }
+				.clouds { position: absolute; opacity: 0.1; background-image:url(img/clouds.png);}
+				.houses { background-image:url(img/houses.png); opacity: 1; position: absolute; }
       </style>
+			<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+			<script type="text/javascript">
       
+					var scrollSpeed = 70;       // Speed in milliseconds
+					var step = 1;               // How many pixels to move per step
+					var current = 0;            // The current pixel row
+					var imageHeight = 2400;     // Background image height
+					var headerHeight = 1200;     // How tall the header is.
+					
+					//The pixel row where to start a new loop
+					var restartPosition = -(imageHeight - headerHeight);
+					
+					function scrollBg(){
+							
+							//Go to next pixel row.
+							current -= step;
+							
+							//If at the end of the image, then go to the top.
+							if (current == restartPosition){
+									current = 0;
+							}
+							
+							//Set the CSS of the header.
+							$('#clouds').css("background-position",""+current+"px 0");
+							
+						}
+					
+					//Calls the scrolling function repeatedly
+					var init = setInterval("scrollBg()", scrollSpeed);
+				
+						
+      </script>
+
 		</head>    
 		<body style="background: #000000;">  
 
-			<div style="width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: center top;  display: block; background-image:url(img/background.jpg);">
-      	<div style="width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: center top;  display: block; background-image:url(img/houses.png);">
+			<div class="fullframe" style="background-image:url(img/background.jpg);">
+        <div id="clouds" class="fullframe clouds">
+        </div>
+        <div class="fullframe houses " style="">  
         </div>
       </div>    
 
