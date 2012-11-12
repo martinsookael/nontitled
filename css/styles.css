@@ -3,8 +3,11 @@
 
 /* MediaQueries */
 
-@media all and (max-width:550px) {
+@media all and (max-width:750px) {
  /* .background {
     margin-top:-200px;
   } */
+
+	.title { top: 50px; left: 100px; }
+	.cast { top: 250px; left: 100px; }
 }
