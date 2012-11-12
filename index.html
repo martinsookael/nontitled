@@ -5,14 +5,11 @@
 		<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
   	<title>Nontitled</title>  
     	<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css" />
-      <link rel="stylesheet" type="text/css" href="css/styles.css" />
-      
-      
-      
+      <link rel="stylesheet" type="text/css" href="css/styles.css" />      
 			<style type="text/css">
 				.background {background-image:url(img/background.jpg); }
-				.fullFrame { width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: center top;  display: block; }
-				.clouds { position: absolute; opacity: 0.3; background-image:url(img/clouds.png);}
+				.fullFrame { width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: left top;  display: block; max-width: 1200px; }
+				.clouds { position: absolute; opacity: 0.23; background-image:url(img/clouds.png);}
 				.houses { background-image:url(img/houses.png); opacity: 1; position: absolute; z-index:2; }
 				.lightBlink {position: absolute; background-image:url(img/lightBlink.gif); background-repeat: no-repeat;}
       </style>
@@ -54,7 +51,9 @@
 		</head>    
 		<body style="background: #000000;">  
 
-			<div class="fullFrame background">
+			<div class="fullFrame background" style="">
+        <div class="fullFrame" style="background-image:url(img/right.png); position: absolute; background-position: right top; z-index: 10;">
+        </div>
         <div id="clouds" class="fullFrame clouds">
         </div>
         <div class="fullFrame houses">  
