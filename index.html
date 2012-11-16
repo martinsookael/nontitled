@@ -97,10 +97,13 @@
       $("#jquery_jplayer_1").jPlayer({
        ready: function () {
         $(this).jPlayer("setMedia", {
-         mp3: "img/air.mp3"
+         mp3: "img/air_lastejupp.mp3"
+         //ogg: "img/air_o.ogg"
+
         }).jPlayer("play");
        },
        supplied: "mp3",
+       //supplied: "ogg",
 			 loop: "true"
       });
      });
