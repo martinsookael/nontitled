@@ -11,5 +11,5 @@
 	.title { top: 50px; left: 80px; }
 	.cast { top: 250px; left: 80px; }
 	.fb-like { top: 430px; left: 80px; }
-	.jp_container_1 { top: 90px; left: 80px; }
+	#jquery_jplayer_1, #jp_container_1 { top: 90px; left: 80px; }	
 }
