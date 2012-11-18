@@ -7,6 +7,8 @@
     	<link rel="stylesheet" type="text/css" href="css/html5reset-1.6.1.css" />
 			<style type="text/css">
 			
+				body {background: #000000;}
+			
 				.element { position: absolute; background-repeat: no-repeat; }
 				.border { border: 1px solid #0066cc; }
 				.rightGradient { background-image:url(img/right2.png); position: absolute; z-index: 10; }
@@ -26,8 +28,9 @@
 				.craneBottom { background-image:url(img/craneBottom.png); width: 24px; height: 54px; top: 542px; left: 720px; }
 				.craneTop { background-image:url(img/craneTop.png); width: 18px; height: 442px; top: 331px; left: 720px; }
 
-				.title { background-image:url(img/title.png); width: 196px; height: 37px; top: 80px; left: 520px; }
-				.cast { background-image:url(img/cast.png); width: 288px; height: 156px; top: 150px; left: 520px; }
+				.title { background-image:url(img/title.png); width: 196px; height: 37px; top: 80px; left: 470px; }
+				.cast { background-image:url(img/cast.png); width: 288px; height: 156px; top: 150px; left: 470px; }
+				.fb-like { width: 150px; height: 50px; top: 330px; left: 520px; }
 				
       </style>
       <link rel="stylesheet" type="text/css" href="css/styles.css" />      
@@ -67,8 +70,15 @@
       </script>
 
 		</head>    
-		<body style="background: #000000;">  
-
+		<body>  
+      <div id="fb-root"></div>
+      <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=447481895288765";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));</script>
 			<div class="fullFrame sky" style="">
           <div class="element monkeyAll">
           </div>
@@ -88,6 +98,7 @@
           <div class="element monkeyTwo"></div>
           <div class="element title"></div>
           <div class="element cast"></div>
+          <div class="element fb-like" data-href="https://www.facebook.com/PlanetOkeiko" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
         </div>
       </div>    
 
