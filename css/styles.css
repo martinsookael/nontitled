@@ -1,6 +1,39 @@
 @charset "UTF-8";
 /* CSS Document */
 
+body {background: #000000; overflow-y: scroll; overflow-x: hidden;}
+
+.element { position: absolute; background-repeat: no-repeat; }
+.border { border: 1px solid #0066cc; }
+.rightGradient { background-image:url(../img/right2.png); position: absolute; z-index: 10; }
+
+.sky {background-image:url(../img/background.jpg); }
+.fullFrame { width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: left top;  display: block; max-width: 1200px; }
+.clouds { position: absolute; opacity: 0.23; background-image:url(../img/clouds.png);}
+.houses { background-image:url(../img/houses.png); opacity: 1; position: absolute; z-index:2; }
+.lightBlink {background-image:url(../img/lightBlink.gif); width: 162px; height: 123px; top: 553px; left: 197px;}
+.window { background-image:url(../img/window.gif); width: 55px; height: 39px; top: 514px; left: 1024px; }
+
+.monkeyOne { background-image:url(../img/monkeyOne.png); width: 96px; height: 124px; top: 112px; left: 240px; }
+.monkeyOneEyes { background-image:url(../img/monkeyOneEyes.gif); width: 96px; height: 124px; top: 112px; left: 240px; }
+.monkeyTwo { background-image:url(../img/monkeyTwo.png); width: 121px; height: 121px; top: 365px; left: 488px; }
+.monkeyAll { background-image:url(../img/monkeyAll.png); width: 327px; height: 125px; top: 480px; left: 751px; }
+
+.craneBottom { background-image:url(../img/craneBottom.png); width: 24px; height: 54px; top: 542px; left: 720px; }
+.craneTop { background-image:url(../img/craneTop.png); width: 18px; height: 442px; top: 331px; left: 720px; }
+
+.title { background-image:url(../img/title.png); width: 196px; height: 37px; top: 80px; left: 470px; }
+.cast { background-image:url(../img/cast.png); width: 288px; height: 156px; top: 150px; left: 470px; }
+.fb-like { width: 150px; height: 50px; top: 330px; left: 470px; }
+
+#jquery_jplayer_1, #jp_container_1 {z-index: 11; top: 80px; left: 690px;}
+
+.jp-play, .jp-pause { color: #999999; text-decoration: none; font-family: Helvetica, Arial, sans-serif; }
+
+
+
+
+
 /* MediaQueries */
 
 @media all and (max-width:750px) {
