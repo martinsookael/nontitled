@@ -17,7 +17,7 @@
 				setInterval(function(){
 						angle+=1;
 					 $("#swirl").rotate(angle);
-					 if(angle==50) { startSwirl();	}
+					 //if(angle==50) { startSwirl();	}
 				},10);
 			});
 		</script>
@@ -32,7 +32,7 @@
     <div class="fullFrame sky2" style="">
       <div class="fullFrame rightGradient" ></div>
        	<img src='../img/2/swirl.gif' id='swirl' class='element swirl'/>                
-        <div class="element theImg "></div>
+        <img src="../img/2/theImg.png" class='element theImg' id="theImgItself" />
         <div class="element title"></div>
         <div class="element cast"></div>
         <div class="element fb-like" data-href="https://www.facebook.com/PlanetOkeiko" data-send="false" data-layout="button_count" data-width="450" data-show-faces="false"></div>
@@ -64,11 +64,16 @@
 				});
 			 });		 
 			 
+			 	// fade in's the swirlel
 				function startSwirl() {
-					$('#swirl').fadeIn('fast');
+					$('#swirl').fadeIn('slow');
 				}
-		 
-			 
+
+						 
+				$('#theImgItself').attr('src', '../img/2/img.png').load(function() {
+					 startSwirl();
+				});			 
+
     </script>
   </body>  
 </html>  
