@@ -58,4 +58,6 @@ body {background: #000000; overflow-y: scroll; overflow-x: hidden; font-family: 
 
 .theImg { background-image:url(../img/2/img.png); width: 506px; height: 501px; top: 140px; left: 688px; }
 
-.swirl { background-image:url(../img/2/swirl.gif); width: 326px; height: 321px; top: 229px; left: 777px; }
+.swirl { width: 326px; height: 321px; top: 229px; left: 777px; }
+
+.theSwirlContainer  { width: 326px; height: 321px; top: 229px; left: 777px; border: 1px solid #990000; }
