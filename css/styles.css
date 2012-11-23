@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /* CSS Document */
 
-body {background: #000000; overflow-y: scroll; overflow-x: hidden;}
+body {background: #000000; overflow-y: scroll; overflow-x: hidden; font-family: Helvetica, Arial, sans-serif; color: #666666; font-size: 10pt; }
 
 /* elements */
 .element { position: absolute; background-repeat: no-repeat; }
@@ -10,7 +10,7 @@ body {background: #000000; overflow-y: scroll; overflow-x: hidden;}
 /* level one */
 
 /* big things */
-.sky {background-image:url(../img/background.jpg); }
+.sky {background-image:url(../img/background.jpg); background-position: right top; }
 .fullFrame { width: 100%; overflow: hidden; height: 674px; background-repeat: no-repeat; background-position: left top;  display: block; max-width: 1200px; }
 .clouds { position: absolute; opacity: 0.23; background-image:url(../img/clouds.png);}
 .houses { background-image:url(../img/houses.png); opacity: 1; position: absolute; z-index:2; }
@@ -34,6 +34,7 @@ body {background: #000000; overflow-y: scroll; overflow-x: hidden;}
 .title { background-image:url(../img/title.png); width: 209px; height: 37px; top: 80px; left: 470px; }
 .cast { background-image:url(../img/cast.png); width: 288px; height: 156px; top: 150px; left: 470px; }
 .fb-like { width: 150px; height: 50px; top: 330px; left: 470px; }
+.extraCredit { top: 680px; left: 20px; }
 
 /* sound */
 #jquery_jplayer_1, #jp_container_1 {z-index: 11; top: 80px; left: 690px;}
@@ -46,6 +47,7 @@ body {background: #000000; overflow-y: scroll; overflow-x: hidden;}
 	.cast { top: 250px; left: 80px; }
 	.fb-like { top: 430px; left: 80px; }
 	#jquery_jplayer_1, #jp_container_1 { top: 90px; left: 80px; }	
+	.jp-play, .jp-pause { color: #ffffff; }
 }
 
 

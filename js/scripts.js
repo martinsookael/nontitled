@@ -29,23 +29,6 @@
 	//Calls the scrolling function repeatedly
 	var init = setInterval("scrollBg()", scrollSpeed);
 
-
-
-	// Play music
-	 $(document).ready(function(){
-		$("#jquery_jplayer_1").jPlayer({
-		 ready: function () {
-			$(this).jPlayer("setMedia", {
-			 mp3: "../img/air2.mp3"
-			 //ogg: "img/air_o.ogg"
-	
-			}).jPlayer("play");
-		 },
-		 supplied: "mp3",
-		 //supplied: "ogg",
-		 loop: "true"
-		});
-	 });
 	 
 		// FB like button
 		(function(d, s, id) {
