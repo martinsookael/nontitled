@@ -30,7 +30,7 @@
 	var init = setInterval("scrollBg()", scrollSpeed);
 
 
-
+/*
 	// Play music
 	 $(document).ready(function(){
 		$("#jquery_jplayer_1").jPlayer({
@@ -46,7 +46,7 @@
 		 loop: "true"
 		});
 	 });
-	 
+*/	 
 		// FB like button
 		(function(d, s, id) {
 		var js, fjs = d.getElementsByTagName(s)[0];
