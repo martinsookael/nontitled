@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>nonTitled level 3 - surferMonkey</title>
+
+<script src="scripts/jquery-1.8.3.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+<!--
+body {
+	background-image:url(img/background.jpg);
+	background-color: #000000;
+}
+
+.cover {
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 480px;
+	background-position: center center;
+}
+
+.border {border: 1px solid #990000;
+
+#mainMonkey {
+}
+
+#monkeyImg {
+		
+}
+
+#mainMonkey {
+    position: absolute;
+    top: 0;
+    overflow: auto;
+    z-index: -1; /* for accessing the video by click */
+	width: 100%;
+}
+
+​
+-->
+</style><!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body class="cover" id="jou">
+
+<script type="text/javascript">
+
+	var image = new Image();
+	image.src = "img/monkeyOneMoving2.gif";
+
+	$(document).ready(function() {
+			$("body").click(function(){ 
+				
+				$("#monkeyImg").attr('src', image.src);
+				
+			});
+	});
+	
+	/* credits: http://jsfiddle.net/GCtMm/ */
+
+	var min_w = 721; // minimum video width allowed   // came when I made the background img to 480
+	var vid_w_orig;  // original video dimensions
+	var vid_h_orig;
+	
+	/*
+	jQuery(function() { // runs after DOM has loaded
+			
+			vid_w_orig = parseInt(jQuery('#monkeyImg').attr('width'));
+			vid_h_orig = parseInt(jQuery('#monkeyImg').attr('height'));
+			$('#debug').append("<p>DOM loaded</p>");
+			
+			jQuery(window).resize(function () { resizeToCover(); });
+			jQuery(window).trigger('resize');
+	});
+	
+	function resizeToCover() {
+			
+			// set the video viewport to the window size
+			jQuery('#mainMonkey').width(jQuery(window).width());
+			jQuery('#mainMonkey').height(jQuery(window).height());
+	
+			// use largest scale factor of horizontal/vertical
+			var scale_h = jQuery(window).width() / vid_w_orig;
+			var scale_v = jQuery(window).height() / vid_h_orig;
+			var scale = scale_h > scale_v ? scale_h : scale_v;
+	
+			// don't allow scaled width < minimum video width
+			if (scale * vid_w_orig < min_w) {scale = min_w / vid_w_orig;};
+	
+			// now scale the video
+			jQuery('#monkeyImg').width(scale * vid_w_orig);
+			jQuery('#monkeyImg').height(scale * vid_h_orig);
+			// and center it by scrolling the video viewport
+			jQuery('#mainMonkey').scrollLeft((jQuery('#monkeyImg').width() - jQuery(window).width()) / 2);
+			jQuery('#mainMonkey').scrollTop((jQuery('#monkeyImg').height() - jQuery(window).height()) / 2);
+			};
+*/	
+</script>
+
+		<!--	<div class="helloWorld /> -->
+		<div id="mainMonkey" class="cover moving">
+    	<img id="monkeyImg" src="img/monkeyOneMoving.gif" class="" style="width: 100%; min-height: 480px; min-width: 721px; overflow: hidden;" />
+    </div>
+
+	<!--
+  <div class="element extraCredit">Photo by Lennart Laberenz</div>
+	-->
+
+</body>
+</html>
